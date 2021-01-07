@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- metadata location -->
+    <!-- use UTF-8 which covers almost all characters in the world -->
+    <meta charset="UTF-8">
+    <!-- might be used on things other than a computer screen thus lets control the page dimensions and scaling -->
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    <title> PHP and mySQL record Storing Test Page </title>
+    <!-- insert styling and scripting sheets here when needed -->
+    
+    </head>
+    <body>
+    
+        <!-- action is the URL where to send the form-data to -->
+        <form action="phpTestPage.php" method="post">
+            <label for='name'>Name:</label>
+            <input type='text' id='name' name='name'><br>
+            <label for='age'>Age:</label>
+            <input type='text' id='age' name='age'><br>
+            <label for='gender'>Gender:</label>
+            <select id='gender' name='gender'><br>
+                <option value='male'>Male</option>
+                <option value='female'>Female</option>
+                <option value='other'>Other</option>
+            </select><br>
+            <input type='submit'>
+        </form>
+    </body>
+</html>
