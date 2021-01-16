@@ -37,3 +37,5 @@ if ($conn->query($sql) === TRUE){
 
 //close the connection to the database
 $conn->close();
+
+?>
