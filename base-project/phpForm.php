@@ -7,10 +7,10 @@ $gender = $_POST['gender'];
 
 //This is the mySQL database information
 $servername = "localhost";
-//Insert before running!
-$username = "";
-$password = "";
-$database = "phpTest";
+//Insert before running! Use Single Quotes!
+$username = '';
+$password = '';
+$database = 'phpTest';
 
 
 //Connect to the mysql database
@@ -19,7 +19,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 // if the connection doesn't work then kill the php (alias for exit)
 // -> is used in object scope to access methods and properties of an object.
 if($conn->connect_error){
-    exit("The Connection has Failed!". $conn->connect_error);
+    exit("The Connection has Failed!: ". $conn->connect_error);
 }
 
 //Creating an SQL query in string form
