@@ -1,0 +1,31 @@
+<!-- 
+    Page that will contain all the Who the heck is that questions
+    Will most likely incorporate a scroll bar
+-->
+
+<!DOCTYPE HTML> 
+<html lang ="en"> 
+<head> <!-- Metadata container  (data about data) -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+        initial-scale=1.0">
+    <title>Who the Heck is That?</title>
+    <link rel="stylesheet" href='questionsStyle.css'>
+    <!-- Same as above, except used to embed a client-side script (JavaScript). -->
+    <!-- defer load script adter page has finished parsing -->
+    <script src="questionsScript.js" defer></script>
+
+</head>
+<body>
+    <h2>Howdy Folks</h2>
+    <p id='test'><p>
+    <form>
+        <label for='q1'>Question 1</label><br>
+        <img src="Images/Brad-Pitt.jpg" alt='question 1 person' width='500' height='500'><br>
+        <textarea rows="2" cols="50" name='q1'>Enter Answer</textarea>
+        <button type ="submit">Submit Answers</button>
+    </form>
+
+</body>
+</html>
