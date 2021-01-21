@@ -7,8 +7,8 @@ document.getElementById("teamName").addEventListener("input", checkTeamField);
 function checkTeamField(){
     //var teamName = document.getElementById('teamName');
     var btn = document.getElementById('teamBtn');
-    if(teamName.value.length > 100){
-        alert("Please Enter a Team Name less or equal to 100 characters");
+    if(teamName.value.length > 50){
+        alert("Please Enter a Team Name less or equal to 50 characters");
     }
     else{
         if(teamName.value === ''){

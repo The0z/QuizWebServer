@@ -3,7 +3,7 @@
 /*  Google Font - Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
 
-/* * (asterisk) is teh unversal selector - selects all elements in the HTML doc */
+/* * (asterisk) is the unversal selector - selects all elements in the HTML doc */
 * {
     box-sizing: border-box;
 }
@@ -62,9 +62,8 @@ body {
     font-size: 1rem;
     padding: 1.1rem; 
     width: 100%;
-    
-
 }
+
 #teamBtn:hover{
     background-color: #1f54e7;
 }

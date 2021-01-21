@@ -15,17 +15,57 @@
     <!-- Same as above, except used to embed a client-side script (JavaScript). -->
     <!-- defer load script adter page has finished parsing -->
     <script src="questionsScript.js" defer></script>
+    <!-- attempting to implement jQuery (the one google runs) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <h2>Howdy Folks</h2>
-    <p id='test'><p>
-    <form>
-        <label for='q1'>Question 1</label><br>
-        <img src="Images/Brad-Pitt.jpg" alt='question 1 person' width='500' height='500'><br>
-        <textarea rows="2" cols="50" name='q1'>Enter Answer</textarea>
-        <button type ="submit">Submit Answers</button>
+    <h2 id='teamName'>Team Name</h2>
+    <p id='instructions' class='questionPanel'>Who do you think it is? Enter your answers in the field below the image</p>
+    <form id='testForm' action="submitAnswers.php" method="post">
+    <div class='flex-container'>
+        <div class='questionPanel'>
+            <label for='q1'>Question 1</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 1 person'>
+            <input type='text' id='q1' class='textInput' name='q1' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q2' class='label'>Question 2</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 2 person'>
+            <input type='text' id='q2' class='textInput' name='q2' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q3'>Question 3</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 3 person'>
+            <input type='text' id='q3' class='textInput' name='q3' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q4' class='label'>Question 4</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 4 person'>
+            <input type='text' id='q4' class='textInput' name='q4' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q5'>Question 5</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 5 person'>
+            <input type='text' id='q5' class='textInput' name='q5' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q6' class='label'>Question 6</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 6 person'>
+            <input type='text' id='q6' class='textInput' name='q6' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q7'>Question 7</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 7 person'>
+            <input type='text' id='q7' class='textInput' name='q7' placeholder="Enter Your Guess Here">
+        </div>
+        <div class='questionPanel'>
+            <label for='q8' class='label'>Question 8</label>
+            <img src="Images/Brad-Pitt.jpg" class='questionImg' alt='question 8 person'>
+            <input type='text' id='q8' class='textInput' name='q8' placeholder="Enter Your Guess Here">
+        </div>
+    </div>
     </form>
-
+    <button id='formBtn' type="submit">SUBMIT ANSWERS</button>
 </body>
 </html>
