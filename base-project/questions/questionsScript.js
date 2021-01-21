@@ -10,5 +10,8 @@ window.onload = (event) => {
 }
 
 document.getElementById('formBtn').addEventListener("click", function(){
-    document.getElementById('testForm').submit();
+    var res = confirm("Press OK to submit your answers. Cancel to go back");
+    if(res == true){
+        document.getElementById('testForm').submit();
+    }
 });
