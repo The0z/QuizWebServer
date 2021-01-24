@@ -1,16 +1,16 @@
 <?php
 
 //These are the values we want to put in the database
-$name = $_POST['name'];
-$age = $_POST['age'];
-$gender = $_POST['gender'];
+$name = $_POST['q1'];
+$age = $_POST['q2'];
+$gender = $_POST['q3'];
 
 //This is the mySQL database information
 $servername = "localhost";
 //Insert before running! Use Single Quotes!
 $username = '';
 $password = '';
-$database = 'phpTest';
+$database = 'quizDB';
 
 
 //Connect to the mysql database
