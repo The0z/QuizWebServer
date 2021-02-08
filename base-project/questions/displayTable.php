@@ -34,7 +34,6 @@
             $sql = "SELECT * FROM scorecard";
             //variable for result of query
             $result = $mysqli->query($sql);
-            $numCols = $result->field_count;
             $numRows = $result->num_rows;
             
             //Probably better to collect all the data and put it in a 2D array.
@@ -47,17 +46,39 @@
                 for($x = 1; $x <= $numRows; $x++){
                     array_push($answers_arr, array_slice($result->fetch_array(MYSQLI_NUM),1));
                 }
-                
-                echo '<pre>';
-                print_r($answers_arr);
-                echo '</pre>';
+                //echo '<pre>'; print_r($answers_arr); echo '</pre>';
 
             }else{
                 echo "Error No Results in Database";
             }
             //close the connection
             $mysqli->close();
- 
+            
+            vertical_table_format($answers_arr);
+
+            //Print the table
+            function vertical_table_format($arr){
+                
+                //Get number of rows and cols (each row will have an equal number of columns)
+                $arr_rows = count($arr);
+                $arr_cols = count($arr[0]); 
+                
+                //Need to transpose the array. $row refers to the tranposed array
+                for($row = 0; $row < $arr_rows; $row++){
+                    for($col = 0; $col < $arr_cols; $col++){
+                        if($row == 0 && $col == 0){
+                            echo "<th scope ='row'> Team Name </th>";
+                        }else if($row != 0 && $col == 0){
+                            echo "<th scope='row'> Q" . $row . "</th>";
+
+                        }
+
+                        echo "<td>" . $arr[$col][$row] . "</td>";
+                    }
+                }
+            }
+
+
         ?>
     </table>
 </body>
