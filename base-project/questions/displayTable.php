@@ -21,7 +21,7 @@
             $servername = "localhost";
             $username = '';
             $password = '';
-            $database = 'quizDB'
+            $database = 'quizDB';
             //create new connection object named            
             $mysqli = new mysqli($servername, $username, $password, $database);
 
@@ -50,29 +50,12 @@
                 
                 print_r($answer_arr);
 
-
-                //Collect field information for all the columns in DB
-                ///$finfo = $result->fetch_fields();
-                
-                
-
-
-                //for each column do the following
-                //foreach($finfo as $val){
-                //    echo "<tr><th"
-               // }
             }else{
                 echo "Error No Results in Database"
             }
             //close the connection
             $mysqli->close();
-
-                
-
-                //While we still have more rows (i.e. teams), fetch_assoc grabs a row from the table and turns it into dict.
-                while($row = $result->fetch_assoc()){
-                    
-                }      
+ 
         ?>
     </table>
 </body>
