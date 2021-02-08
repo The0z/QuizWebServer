@@ -1,21 +1,14 @@
+
+/* || Imported Files */
 /*  Google Font - Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
 
+/* || General Styles */
 /* * (asterisk) is the unversal selector - selects all elements in the HTML doc */
 * {
     box-sizing: border-box;
 }
 
-h2 {
-    background-color: white;
-    margin: 2vh;
-    width: 70vw;
-    border-radius: 5px;
-    box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
-    text-align: center;
-}
-
-/* formating the body html tag */
 body {
     /* Background image Settings */
     background-image: url("Images/WSPLunchroom.jpg");
@@ -27,17 +20,38 @@ body {
     align-items: center;
 }
 
+h2 {
+    background-color: white;
+    margin: 2vh;
+    width: 70vw;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
+    text-align: center;
+}
+
 img {
     object-fit: cover;
     width: 95%;
     height: 80%;
   }
-  
-label {  
-    color:Black;
-    font-size: 6vh;
-  }
 
+/* Currently only used for form labels */  
+label {  
+    color:black;
+    font-size: 6vh;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #4370E7;
+    font-family: "Source Sans Pro", sans-serif; /* desired font + default font*/
+    font-size: 25px;
+    text-align: left;
+}
+
+
+/* || Classes  */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -46,11 +60,6 @@ label {
     align-content: center;
     width: 100%;
     height: 100%;
-}
-
-#instructions{
-    width: 70vw;
-    height: 10vh;
 }
 
 .questionPanel{
@@ -74,6 +83,12 @@ label {
 }
 
 
+/* || IDs */
+#instructions{
+    width: 70vw;
+    height: 10vh;
+}
+
 #formBtn{
     margin: 4vh;
     background-color: #4370E7;
@@ -90,3 +105,4 @@ label {
 #formBtn:hover{
     background-color: #1f54e7;
 }
+
