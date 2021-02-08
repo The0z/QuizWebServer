@@ -39,19 +39,21 @@
             
             //Probably better to collect all the data and put it in a 2D array.
             //First check if DB is not empty, if not, then begin populating table
-            if($result->num_rows > 0){
+            if($numRows > 0){
                 
                 //Creating an array that contains all the database entries, needed due to formatting
                 //requirement.
                 $answers_arr = [];
-                for($x = 1; $x <= $num_rows; $x++){
-                    array_push($answer_arr, array_slice($mysqli->fetch_array(MYSQLI_NUM),1));
+                for($x = 1; $x <= $numRows; $x++){
+                    array_push($answers_arr, array_slice($result->fetch_array(MYSQLI_NUM),1));
                 }
                 
-                print_r($answer_arr);
+                echo '<pre>';
+                print_r($answers_arr);
+                echo '</pre>';
 
             }else{
-                echo "Error No Results in Database"
+                echo "Error No Results in Database";
             }
             //close the connection
             $mysqli->close();
