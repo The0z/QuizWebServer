@@ -65,6 +65,7 @@
                 
                 //Need to transpose the array. $row refers to the tranposed array
                 for($row = 0; $row < $arr_rows; $row++){
+                    echo "<tr>";
                     for($col = 0; $col < $arr_cols; $col++){
                         if($row == 0 && $col == 0){
                             echo "<th scope ='row'> Team Name </th>";
@@ -75,6 +76,7 @@
 
                         echo "<td>" . $arr[$col][$row] . "</td>";
                     }
+                    echo "</tr>";
                 }
             }
 
