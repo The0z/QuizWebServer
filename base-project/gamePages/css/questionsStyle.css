@@ -13,7 +13,7 @@ body {
     /* Background image Settings */
     background-image: url("images/WSPLunchroom.jpg");
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     font-family: "Source Sans Pro", sans-serif; /* desired font + default font*/
     display:flex;
