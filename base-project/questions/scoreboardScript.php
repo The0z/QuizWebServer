@@ -9,10 +9,10 @@
     <link rel="stylesheet" href='questionsStyle.css'>
     <!-- Same as above, except used to embed a client-side script (JavaScript). -->
     <!-- defer load script adter page has finished parsing -->
-    <!-- <script src="questionsScript.js" defer></script> -->
+    <script>script src="scoreboardScript.js" defer></script>
 </head>
 <body>
-    <h2> Answers and Guesses <h2>
+    <h2> Answers and Guesses </h2>
     <table>
         <!-- tr defines a row of a table, th is header, td is data -->
         <?php
