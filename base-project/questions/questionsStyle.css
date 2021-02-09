@@ -41,15 +41,34 @@ label {
     font-size: 6vh;
 }
 
+
+/* | Table Formatting */
 table{
+    border: 2px solid black;
     border-collapse: collapse;
-    width: 100%;
-    color: #4370E7;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80vw;
     font-family: "Source Sans Pro", sans-serif; /* desired font + default font*/
-    font-size: 25px;
+    font-size: 1rem;
     text-align: left;
 }
 
+th, td{
+    border: 2px solid black;
+    /* top right bottom left */
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+
+}
+
+th{
+    font:bold;
+    background:rgb(252,66,54,0.5);
+}
+
+tr:nth-child(odd){
+    background: #fc4236;
+
+}
 
 /* || Classes  */
 .flex-container {
@@ -91,9 +110,11 @@ table{
 
 #formBtn{
     margin: 4vh;
-    background-color: #4370E7;
+    /* Old colour #4370E7 */
+    background-color: #fc4236;
     width: 25vw;
     border:black;
+    border-radius: 5px;
     /* sets color of font */
     color: white; 
     cursor: pointer;
@@ -103,6 +124,7 @@ table{
 }
 
 #formBtn:hover{
-    background-color: #1f54e7;
+    /* old color #1f54e7 */
+    background-color: #c9382e;
 }
 

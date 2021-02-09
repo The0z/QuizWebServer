@@ -49,7 +49,7 @@ body {
 }
 
 #teamBtn{
-    background-color: #4370E7;
+    background-color: #fc4236;
     /* remove border so it appears rounded at the bottom */
     border: none;
     /* sets color of font */
@@ -65,7 +65,7 @@ body {
 }
 
 #teamBtn:hover{
-    background-color: #1f54e7;
+    background-color: #c9382e;;
 }
 
 #teamBtn:disabled{
