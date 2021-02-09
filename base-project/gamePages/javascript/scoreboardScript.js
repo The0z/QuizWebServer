@@ -19,8 +19,8 @@ function callDeleteTable(){
         type: "POST",
         url: 'php/deleteTable.php',        
         data: {function2call: 'deleteTable'},
-        success: function(){setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)},
-        error: function(){setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted", text:"Please submit a bug to ozman99mail@gmail.com"})},1000)}
+        success: function(){setTimeout(() => {Alt.alternative({status:'success', title:"Answers Deleted Successfully"})},1000)},
+        error: function(){setTimeout(() => {Alt.alternative({status:'error', title:"Answers Failed to be Deleted", text:"Please submit a bug to ozman99mail@gmail.com"})},1000)}
     });
 }
 

@@ -38,7 +38,7 @@ function checkLettersSpaces(textInput){
 document.getElementById('teamBtn').addEventListener("click", function(){    
     if(checkLettersSpaces(teamName)){
         document.cookie = 'teamname=' + teamName.value;
-        window.location.href = "questions/questions.html";
+        window.location.href = "../gamePages/questions.html";
     }
     else{
         alert('Please enter only letters, dash, commas, and/or spaces');

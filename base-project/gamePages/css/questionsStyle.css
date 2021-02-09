@@ -11,9 +11,10 @@
 
 body {
     /* Background image Settings */
-    background-image: url("Images/WSPLunchroom.jpg");
-    background-repeat: repeat;
-    background-size: cover;
+    background-image: url("images/WSPLunchroom.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center center;
     font-family: "Source Sans Pro", sans-serif; /* desired font + default font*/
     display:flex;
     flex-direction: column;

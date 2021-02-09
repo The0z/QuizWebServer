@@ -10,7 +10,7 @@
 
 /* formating the body html tag */
 body {
-    background-image: url("Images/WSPLunchroom.jpg");
+    background-image: url("images/WSPLunchroom.jpg");
     background-size: cover;
     background-position: center center;
     font-family: "Source Sans Pro", sans-serif; /* desired font + default font */

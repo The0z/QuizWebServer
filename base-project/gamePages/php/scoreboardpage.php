@@ -6,15 +6,28 @@
     content="width=device-width,
         initial-scale=1.0">
     <title>Scoreboard</title>
-    <link rel="stylesheet" href='questionsStyle.css'>
-    <!-- Same as above, except used to embed a client-side script (JavaScript). -->
-    <!-- defer load script adter page has finished parsing -->
-    <script>script src="scoreboardScript.js" defer></script>
+    
+    <!-- STYLING -->
+    <!-- ttop and bootstrap used for Confirmation Button, other used for general styling -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/materia/bootstrap.min.css">
+    <link rel="stylesheet" href='../css/questionsStyle.css'>
+    
+    <!-- SCRIPTS - set all to defer (load after page is done) -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js" defer></script>
+    <script src="../javascript/alt-alert.js" defer></script>
+    <script src="../javascript/scoreboardScript.js" defer></script>
+
 </head>
 <body>
     <h2> Answers and Guesses </h2>
     <table>
         <!-- tr defines a row of a table, th is header, td is data -->
+        <input type='button' id='startOverBtn' value="Play Again?">
+
+        <!-- PHP to create Table -->
         <?php
             //following PHP recommendations    
             //using object-oriented approach (i.e use the -> style)
