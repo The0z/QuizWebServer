@@ -5,7 +5,7 @@ $("#startOverBtn").click(function(e){
     {Alt.alternative({status:'loading'}); 
     if(res){
         callDeleteTable();
-        setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)
+        
     }
     else{
         null;
@@ -18,9 +18,9 @@ function callDeleteTable(){
         type: "POST",
         url: 'php/deleteTable.php',        
         dataType: 'json',
-        data: {functionname: 'deleteTable'}
-        //success: function() {setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)},
-        //error: function() {setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted"})},1000)}
+        data: {functionname: 'deleteTable'},
+        success: setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000),
+        error: setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted"})},1000)
     });
 }
 
