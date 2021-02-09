@@ -47,7 +47,7 @@ table{
     border: 2px solid black;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 80vw;
+    width: 70vw;
     font-family: "Source Sans Pro", sans-serif; /* desired font + default font*/
     font-size: 1rem;
     text-align: left;
@@ -128,3 +128,25 @@ tr:nth-child(odd){
     background-color: #c9382e;
 }
 
+#startOverBtn{
+    margin: 10px;
+    background-color: #fc4236;
+    /* remove border so it appears rounded at the bottom */
+    border: none;
+    box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
+    border-radius: 10px;
+    /* sets color of font */
+    color: white; 
+    cursor: pointer;
+    /* changes it to a finger pointing */
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1.1rem; 
+    width: 70vw;
+}
+
+#startOverBtn:hover{
+    background-color: #c9382e;;
+}
