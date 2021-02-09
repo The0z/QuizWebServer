@@ -13,6 +13,7 @@ $("#startOverBtn").click(function(e){
     }});
 });
 
+//add php to make the success and error work!
 function callDeleteTable(){
     jQuery.ajax({
         type: "POST",
