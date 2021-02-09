@@ -12,15 +12,15 @@ $("#startOverBtn").click(function(e){
     }});
 });
 
-//add php to make the success and error work!
+//Deletes the users current game files. NOTE do not set datatype to json as it will result in an error as we
+//are not return any json files from the php. 
 function callDeleteTable(){
     jQuery.ajax({
         type: "POST",
         url: 'php/deleteTable.php',        
-        dataType: 'json',
         data: {function2call: 'deleteTable'},
         success: function(){setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)},
-        error: function(){setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted"})},1000)}
+        error: function(){setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted", text:"Please submit a bug to ozman99mail@gmail.com"})},1000)}
     });
 }
 
