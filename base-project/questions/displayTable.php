@@ -60,13 +60,14 @@
             function vertical_table_format($arr){
                 
                 //Get number of rows and cols (each row will have an equal number of columns)
-                $arr_rows = count($arr);
-                $arr_cols = count($arr[0]); 
+                //Array must be transposed.
+                $old_arr_rows = count($arr);
+                $old_arr_cols = count($arr[0]); 
                 
                 //Need to transpose the array. $row refers to the tranposed array
-                for($row = 0; $row < $arr_rows; $row++){
+                for($row = 0; $row < $old_arr_cols; $row++){
                     echo "<tr>";
-                    for($col = 0; $col < $arr_cols; $col++){
+                    for($col = 0; $col < $old_arr_rows; $col++){
                         if($row == 0 && $col == 0){
                             echo "<th scope ='row'> Team Name </th>";
                         }else if($row != 0 && $col == 0){
