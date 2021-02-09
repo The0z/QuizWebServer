@@ -151,3 +151,15 @@ tr:nth-child(odd){
 #startOverBtn:hover{
     background-color: #c9382e;;
 }
+
+#checkMarkImg{
+    width: 40vw;
+    height: 40vh;
+    border:#fc4236;
+    border-radius: 10px;
+    
+}
+
+#ansSubH2{
+    width:40vw;
+}
