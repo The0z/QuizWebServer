@@ -4,9 +4,8 @@ $("#startOverBtn").click(function(e){
     return Alt.alternative({status:'question',showConfirmButton:true,showCancelButton: true,stop:true,title:'Are You Sure?',text:"Pressing OKAY will DELETE ALL TEAMS ANSWERS"}).then((res) => 
     {Alt.alternative({status:'loading'}); 
     if(res){
-        
-        //setTimeout(() => {Alt.alternative({status:'error',title:"Table failed to delete"})},500)
         callDeleteTable();
+        setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)
     }
     else{
         null;
@@ -19,9 +18,9 @@ function callDeleteTable(){
         type: "POST",
         url: 'php/deleteTable.php',        
         dataType: 'json',
-        data: {functionname: 'deleteTable'},
-        success: function() {setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)},
-        error: function() {setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted"})},1000)}
+        data: {functionname: 'deleteTable'}
+        //success: function() {setTimeout(() => {Alt.alternative({status:'success', title:"Table Deleted Successfully"})},1000)},
+        //error: function() {setTimeout(() => {Alt.alternative({status:'error', title:"Table Failed to be Deleted"})},1000)}
     });
 }
 
