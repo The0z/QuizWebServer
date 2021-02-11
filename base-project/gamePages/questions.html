@@ -11,16 +11,24 @@
     content="width=device-width,
         initial-scale=1.0">
     <title>Who the Heck is That?</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link rel="stylesheet" href='css/questionsStyle.css'>
-    <!-- Same as above, except used to embed a client-side script (JavaScript). -->
-    <!-- defer load script adter page has finished parsing -->
-    <script src="javascript/questionsScript.js" defer></script>
-    <!-- attempting to implement jQuery (the one google runs) -->
+
+    <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    
+    <script src="javascript/questionsScript.js"></script>
+    <script src="https://kit.fontawesome.com/81e040d0bb.js" crossorigin="anonymous"></script>
 
 </head>
-<body id='myBody'>
-    <h2 id='teamName'>Team Name</h2>
+<body class='myBody'>
+    <div class='myDiv'>
+    <h2 class='myH2' id='teamName'>Team Name</h2>
     <p id='instructions' class='questionPanel'>Who do you think it is? Enter your answers in the field below the image</p>
     <form id='testForm' action="php/submitAnswers.php" method="post">
     <div class='flex-container'>
@@ -127,5 +135,6 @@
     </div>
     </form>
     <button id='formBtn' type="submit">SUBMIT ANSWERS</button>
+    <div>
 </body>
 </html>

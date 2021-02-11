@@ -8,7 +8,7 @@ $("#startOverBtn").click(function(e){
         theme: 'modern',
         closeIcon: 'true',
         title: 'Confirm',
-        content: 'Are you sure you want to startover? <br> This will DELETE everyone\'s answers',
+        content: 'Are you sure you want to startover? <br> This will your team\'s answers',
         animation: 'RotateY',
         animateClose: 'RotateY',
         autoClose: 'cancel|10000',
@@ -51,7 +51,7 @@ function deleteSuccess(){
         theme: 'modern',
         title: "Success!",
         type: 'green',
-        content: "Game deleted successfully. Press OK to go to main page",
+        content: "Answers deleted successfully. Press OK to go to main page",
         buttons:{
             ok:{
                 text: 'OK',
@@ -71,7 +71,7 @@ function deleteFailure(){
         theme: 'modern',
         title: "OH NO!",
         type: 'red',
-        content: "Game could not be deleted, please email ozman99mail@gmail.com",
+        content: "Answers could not be deleted, please submit a bug to the0z on Github",
     });
 }
 

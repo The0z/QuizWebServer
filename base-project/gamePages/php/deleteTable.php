@@ -27,10 +27,10 @@ function deleteTable(){
         exit("The Connection has Failed!: ". $conn->connect_error);
     }
     
-    $sql = 'DROP TABLE ' . $tableName;
+    $teamName = htmlspecialchars($_COOKIE['teamname']);
+    $sql = "DELETE FROM scorecard WHERE teamName='$teamName'";
     $conn->query($sql);
     $conn->close();
-
 }
 
 ?>

@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/81e040d0bb.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="myBody">
     <h2> Answers and Guesses </h2>
     <table>
         <!-- tr defines a row of a table, th is header, td is data -->

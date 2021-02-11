@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+
 // The JavaScript file!
 
 var teamName = document.getElementById('teamName');
@@ -7,7 +10,14 @@ document.getElementById("teamName").addEventListener("input", checkTeamField);
 function checkTeamField(){
     var btn = document.getElementById('teamBtn');
     if(teamName.value.length > 50){
-        alert("Please Enter a Team Name less or equal to 50 characters");
+        $.alert({
+            icon: 'fas fa-exclamation-triangle',
+            closeIcon: 'false',
+            theme: 'modern',
+            title: "Alert",
+            type: 'orange',
+            content: "Please enter a team name less than 50 characters",
+        });
     }
     else{
         if(teamName.value === ''){
@@ -25,7 +35,7 @@ function checkLettersSpaces(textInput){
     // ^ = begin with, [a-zA-Z-,] = any lower/uppercase letters, comma, or dash
     // + = 1 more times of the preceding, \s white space, {0,1} match 0 or 1 times whitespace changed to *
     // () = group, * = 0 or more times of thing proceding it, $ end!
-    var filter = /^[a-zA-Z-,]+(\s*[a-zA-Z-,])*$/;
+    var filter = /^[a-z0-9A-Z-,]+(\s*[a-z0-9A-Z-,])*$/;
     if(textInput.value.match(filter)){
         return true;
     }
@@ -35,13 +45,25 @@ function checkLettersSpaces(textInput){
 }
 
 
-document.getElementById('teamBtn').addEventListener("click", function(){    
+  //e refers to the event object 
+  $("#teamBtn").click(function (e) {
+
     if(checkLettersSpaces(teamName)){
         document.cookie = 'teamname=' + teamName.value;
         window.location.href = "../gamePages/questions.html";
     }
     else{
-        alert('Please enter only letters, dash, commas, and/or spaces');
+        $.alert({
+            icon: 'fas fa-exclamation-triangle',
+            closeIcon: 'false',
+            theme: 'modern',
+            title: "Alert",
+            type: 'orange',
+            content: "Please enter only letters, numbers, dashes, commas, and/or ap",
+        });
     }
-});
+  });
 
+
+
+});

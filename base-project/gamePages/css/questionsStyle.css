@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-#myBody {
+.myBody {
     background-image: url("images/WSPLunchroom.jpg");
     background-repeat: repeat-y;
     background-size: cover;

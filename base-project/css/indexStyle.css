@@ -9,7 +9,7 @@
 }
 
 /* formating the body html tag */
-body {
+.myBody {
     background-image: url("images/WSPLunchroom.jpg");
     background-size: cover;
     background-position: center center;
@@ -40,6 +40,15 @@ body {
 }
 
 #teamName{
+    border: dashed;
+    margin: 10px;
+    font-size: 1rem;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+}
+
+#roomCode{
     border: dashed;
     margin: 10px;
     font-size: 1rem;

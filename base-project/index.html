@@ -12,22 +12,31 @@
     <meta name="viewport"
     content="width=device-width,
         initial-scale=1.0">
-    <title>Quiz Welcome Page</title>
-    <!--  defines the relationship between the current document and an 
-        external resource. href = location of linked document (URL) -->
+    <title>Quiz Welcome Page</title>    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link rel="stylesheet" href='css/indexStyle.css'>
-    <!-- Same as above, except used to embed a client-side script (JavaScript). -->
-    <!-- defer load script adter page has finished parsing -->
-    <script src="javascript/indexScript.js" defer></script>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    
+    <script src="javascript/indexScript.js"></script>
+    <script src="https://kit.fontawesome.com/81e040d0bb.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class='myBody'>
+    <div class="myDiv">
     <div class="welcomeScreen">
         <h3>WELCOME TO KATHLEEN'S <br> WHO THE HECK IS THAT QUIZ</h3>
         <input type='text' id='teamName' name='teamName' placeholder="Enter your team name">
+        <!-- <input type='test' id='roomCode' name='roomCode' placeholder="Enter Room Code"> -->
         <input type='button' id='teamBtn' value="SUBMIT" disabled>
     </div>
-
+    </div>
 </body>
 </html>
 

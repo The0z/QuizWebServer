@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
 //On load set teamName that was retreived earlier. If somehow null set it to BugFinder Team
 window.onload = (event) => {
@@ -10,12 +10,33 @@ window.onload = (event) => {
     document.getElementById('teamName').innerHTML = teamName;
 }
 
-document.getElementById('formBtn').addEventListener("click", function(){
-    var res = confirm("Press OK to submit your answers. Cancel to go back");
-    if(res == true){
-        document.getElementById('testForm').submit();
-    }
-});
+  //e refers to the event object 
+  $("#formBtn").click(function (e) {
+
+    $.confirm({
+      icon: 'fa fa-question',
+      theme: 'modern',
+      closeIcon: 'true',
+      title: 'Confirm',
+      content: 'Are you sure you want to submit? <br> You cannot go back',
+      animation: 'RotateY',
+      animateClose: 'RotateY',
+      autoClose: 'cancel|15000',
+      type: 'orange',
+      buttons: {
+        submit: {
+          text: 'Submit',
+          action: function () {
+            document.getElementById('testForm').submit();
+          }
+        },
+        cancel: {
+          text: 'Cancel',
+
+        }
+      }
+    });
+  });
 
 // https://www.w3schools.com/js/js_cookies.asp
 function getCookie(cname) {
@@ -33,3 +54,5 @@ function getCookie(cname) {
     }
     return ""; //else return empty string if cookie is not found.
   }
+
+});
