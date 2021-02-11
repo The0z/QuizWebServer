@@ -1,15 +1,33 @@
+$(document).ready(function(){
+
 //e refers to the event object 
 $("#startOverBtn").click(function(e){
-    //cancel brings you back to the normal page (i.e. null), while confirm will call a PHP script using JQuery Ajax and delete the database
-    return Alt.alternative({status:'question',showConfirmButton:true,showCancelButton: true,stop:true,title:'Are You Sure?',text:"Pressing OKAY will DELETE ALL TEAMS ANSWERS"}).then((res) => 
-    {Alt.alternative({status:'loading'}); 
-    if(res){
-        callDeleteTable();
-    }
-    else{
-        null;
-    }});
+    
+    $.confirm({
+        icon: 'fa fa-question',
+        theme: 'modern',
+        closeIcon: 'true',
+        title: 'Confirm',
+        content: 'Are you sure you want to startover? <br> This will DELETE everyone\'s answers',
+        animation: 'RotateY',
+        animateClose: 'RotateY',
+        autoClose: 'cancel|10000',
+        type: 'orange',
+        buttons: {
+            yes:{
+                text: 'YES',
+                action: function(){
+                    callDeleteTable();
+                }
+            },
+            cancel: {
+                text: 'Cancel', 
+        
+            }
+        }
+    });
 });
+
 
 //Deletes the users current game files. NOTE do not set datatype to json as it will result in an error as we
 //are not return any json files from the php.
@@ -19,8 +37,41 @@ function callDeleteTable(){
         type: "POST",
         url: '../php/deleteTable.php',        
         data: {function2call: 'deleteTable'},
-        success: function(){setTimeout(() => {Alt.alternative({status:'success', title:"Answers Deleted Successfully"}).then((res) => {mainPageRedir();})},1000)},
-        error: function(){setTimeout(() => {Alt.alternative({status:'error', title:"Answers Failed to be Deleted", text:"Please submit a bug to ozman99mail@gmail.com"}).then((res) => {reloadPage();})},1000)}
+        success: function(){ deleteSuccess()},
+        error: function(){deleteFailure()}
+    });
+}
+
+
+//Success Function
+function deleteSuccess(){
+    $.alert({
+        icon: 'fas fa-check-circle',
+        closeIcon: 'false',
+        theme: 'modern',
+        title: "Success!",
+        type: 'green',
+        content: "Game deleted successfully. Press OK to go to main page",
+        buttons:{
+            ok:{
+                text: 'OK',
+                action: function(){
+                    mainPageRedir();
+                }
+            }
+        }
+    });
+}
+
+//Failure Function
+function deleteFailure(){
+    $.alert({
+        icon: 'fas fa-skull',
+        closeIcon: 'false',
+        theme: 'modern',
+        title: "OH NO!",
+        type: 'red',
+        content: "Game could not be deleted, please email ozman99mail@gmail.com",
     });
 }
 
@@ -29,9 +80,5 @@ function mainPageRedir(){
     window.location.replace("../../index.html");
 }
 
-//Refreshes the page - current fix for broken button
-function reloadPage(){
-    //location.reload();
-    //currently just redirect to main page too
-    window.location.replace("../../index.html");
-}
+
+});

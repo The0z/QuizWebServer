@@ -16,7 +16,7 @@
     <script src="../javascript/alt-alert.js" defer></script>
     <script src="../javascript/scoreboardScript.js" defer></script>
 </head>
-<body>
+<body id='myBody'>
     <h2 id='ansSubH2'>Answers Submitted! Please wait for others to finish</h2>
     <img src="../game_images/checkMark.gif" id='checkMarkImg' alt="checkmark gif">
     <form id='testForm' action="scoreboardPage.php" method="post">
