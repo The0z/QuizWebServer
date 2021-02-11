@@ -1,16 +1,19 @@
 <?php
+//PHP used to handle deleting entries in SQL table
+
 
 //if the function exists then call it
 if(isset($_POST['function2call']) && !empty($_POST['function2call'])){
     $function2call = $_POST['function2call'];
     switch($function2call){
-        case 'deleteTable': deleteTable(); break;
+        case 'deleteTable': deleteRow(); break;
         default: break;
     }
 }
 
-// ADD check that table still exists.
-function deleteTable(){
+// Deletes a row in the table that has the team name of the team using it
+// note this has a potential to delete multiple rows if teams use the same name
+function deleteRow(){
     //This is the mySQL database information
     $servername = "localhost";
     //Insert before running! Use Single Quotes!

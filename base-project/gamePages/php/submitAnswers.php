@@ -27,6 +27,8 @@
 </body>
 <?php
 
+//Used to submit user data into the database
+
 //Acts like console.log in JS - https://stackify.com/how-to-log-to-console-in-php/
     function console_log($output, $with_script_tags = true){
         $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . ');';

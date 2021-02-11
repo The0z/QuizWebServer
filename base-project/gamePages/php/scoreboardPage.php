@@ -31,6 +31,8 @@
 
         <!-- PHP to create Table -->
         <?php
+            //Used to load SQL data and convert it into a vertical table (headers in first row)
+
             //following PHP recommendations    
             //using object-oriented approach (i.e use the -> style)
             $servername = "localhost";
@@ -71,7 +73,7 @@
             
             vertical_table_format($answers_arr);
 
-            //Print the table
+            //Print the table in vertical format (row 1 is headers)
             function vertical_table_format($arr){
                 
                 //Get number of rows and cols (each row will have an equal number of columns)
