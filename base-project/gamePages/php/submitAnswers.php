@@ -18,7 +18,7 @@
 </head>
 <body class='myBody'>
     <div class="myDiv">
-    <h2 class='MyH2' id='ansSubH2'>Answers Submitted! Please wait for others to finish</h2>
+    <h2 class='myH2' id='ansSubH2'>Answers Submitted! Please wait for others to finish</h2>
     <img src="../game_images/checkMark.gif" id='checkMarkImg' alt="checkmark gif">
     <form id='testForm' action="scoreboardPage.php" method="post">
         <button id='formBtn' type="submit">CLICK THIS WHEN EVERYONE IS DONE</button>
