@@ -8,7 +8,7 @@ $("#startOverBtn").click(function(e){
         theme: 'modern',
         closeIcon: 'true',
         title: 'Confirm',
-        content: 'Are you sure you want to startover? <br> This will your team\'s answers',
+        content: 'Are you sure you want to startover? <br> This will delete your team\'s answers',
         animation: 'RotateY',
         animateClose: 'RotateY',
         autoClose: 'cancel|10000',
@@ -51,7 +51,7 @@ function deleteSuccess(){
         theme: 'modern',
         title: "Success!",
         type: 'green',
-        content: "Answers deleted successfully. Press OK to go to main page",
+        content: "Answers deleted successfully. Press OK to go to the main page",
         buttons:{
             ok:{
                 text: 'OK',

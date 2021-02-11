@@ -9,11 +9,11 @@ $(document).ready(function(){
     $("#q4P").html("Question 4: What is the name of this structure?");
     $("#q5P").html("Question 5: What is this a part of?");
     $("#q6P").html("Question 6: Which villian is this actor portraying?");
-    $("#q7P").html("Question 7: What is the name of the place below the tower?");
+    $("#q7P").html("Question 7: What is the name of the gardens below the tower?");
     $("#q8P").html("Question 8: Who is this?");
     $("#q9P").html("Question 9: What is the brand and name of this sport hatch?");
     $("#q10P").html("Question 10: Who is the heck is this?");
-    $("#q11P").html("Question 11: What is thing waves in the sky called?");
+    $("#q11P").html("Question 11: What is the waves in the sky called?");
     $("#q12P").html("Question 12: Where is this?");
     $("#q13P").html("Question 13: What is this?!?");
     $("#q14P").html("Question 14: Where is this?");
