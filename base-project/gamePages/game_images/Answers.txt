@@ -1,0 +1,20 @@
+q1: Brad Pitt
+q2: Michael Dam
+q3: What is the name of the car? Kia Stinger
+q4: Colosseum
+q5: What is this a part of? Taj Mahal
+q6: Cruella deville
+q7: What are the name of the Gardens (english characters)? Gardens of the Trocadero
+q8: Zazen Koan
+q9: Hyundai Elantra GT N-line
+q10: Mubariz Mehdizadeh
+q11: Northern Lights
+q12: Jewel Changi, Singapore
+q13: What is this? Covid
+q14: Bryce Canyon
+q15: Kathleen
+q16: What are these? Horses!
+q17: Golden Retriever
+q18: Craig Mckay
+q19: Stefan Stefancik
+q20: Jonas Kakaroto

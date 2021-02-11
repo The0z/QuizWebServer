@@ -39,7 +39,7 @@
 
 /* Ensures images stay within flex container when zoomed in or out */ 
 img {
-    object-fit: cover;
+    object-fit: contain;
     width: 90%;
     height: 300px;
     justify-content: center;
