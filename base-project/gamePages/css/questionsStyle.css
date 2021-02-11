@@ -2,6 +2,7 @@
 /* || Imported Files */
 /*  Google Font - Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /* || General Styles */
 /* * (asterisk) is the unversal selector - selects all elements in the HTML doc */
@@ -18,7 +19,7 @@
 
 .myDiv {
     /* Background image Settings */
-    font-family: "Source Sans Pro", sans-serif; /* desired font + default font*/
+    font-family: "Anton", sans-serif; /* desired font + default font*/
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -86,10 +87,10 @@ tr:nth-child(odd){
 }
 
 .questionPanel{
-    margin: 1vw;
+    margin: 10px;
     padding: 10px;
-    width: 40%;
-    height: 70vh;
+    width: 500px;
+    height: fit-content;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
@@ -97,10 +98,18 @@ tr:nth-child(odd){
     /* overflow: hidden; */
 
 }
+
+.questionImg{
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    object-fit: center;
+}
+
 .textInput {
-    width: 37vw;
-    height: 5vh;
-    font-size: 5vh;
+    width: 90%;
+    height: 10%;
+    font-size: 1rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
 }
@@ -108,15 +117,19 @@ tr:nth-child(odd){
 
 /* || IDs */
 #instructions{
-    width: 70vw;
-    height: 10vh;
+    background-color: white;
+    margin: 2vh;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
+    text-align: center;
 }
 
 #formBtn{
     margin: 4vh;
     /* Old colour #4370E7 */
     background-color: #fc4236;
-    width: 25vw;
+    width: 480px;
     border:black;
     border-radius: 5px;
     /* sets color of font */

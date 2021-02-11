@@ -7,7 +7,7 @@ window.onload = (event) => {
     if(teamName == null || teamName == ''){
         teamName = 'Bug Finder Team';
     }
-    document.getElementById('teamName').innerHTML = teamName;
+    document.getElementById('teamName').innerHTML = "Team: " + teamName;
 }
 
   //e refers to the event object 

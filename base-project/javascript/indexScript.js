@@ -59,7 +59,7 @@ function checkLettersSpaces(textInput){
             theme: 'modern',
             title: "Alert",
             type: 'orange',
-            content: "Please enter only letters, numbers, dashes, commas, and/or ap",
+            content: "Please enter only letters, numbers, dashes, commas, and/or spaces",
         });
     }
   });
