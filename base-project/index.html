@@ -1,7 +1,5 @@
 <!-- 
-    index is The index.html page is the most common name used for the 
-    default page shown on a website if no other page is specified
-    Having a Template is BEST PRACTICE!!!
+    Mainpage that welcomes users and prompts them to enter their team name to begin the game
 -->
 
 <!DOCTYPE HTML> <!-- tells the browser what type to expect -->
@@ -23,17 +21,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
-    
     <script src="javascript/indexScript.js"></script>
     <script src="https://kit.fontawesome.com/81e040d0bb.js" crossorigin="anonymous"></script>
 
 </head>
 <body class='myBody'>
+    <!-- Container for the box that displays text, textinput and the begin game button-->
     <div class="myDiv">
     <div class="welcomeScreen">
         <p id="mainTitle">Welcome to Kathleen's: <br> WHO THE HECK IS THAT QUIZ</p>
         <input type='text' id='teamName' name='teamName' placeholder="Enter your team name">
-        <!-- <input type='test' id='roomCode' name='roomCode' placeholder="Enter Room Code"> -->
+        <!-- Disabled by default as button should only be pressed when a team name is entered -->
         <input type='button' id='teamBtn' value="BEGIN GAME" disabled>
     </div>
     </div>
