@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-//On load set teamName that was retreived earlier. If somehow null set it to BugFinder Team
+//On load set teamName that was created on the previous page. If somehow null set it to BugFinder Team
+//Set team Name header to Team: teamName
 window.onload = (event) => {
     var teamName = getCookie('teamname');
     //var teamName = sessionStorage.getItem('teamName');
@@ -10,9 +11,9 @@ window.onload = (event) => {
     document.getElementById('teamName').innerHTML = "Team: " + teamName;
 }
 
-  //e refers to the event object 
+  //Form Button used to move onto next webpage
   $("#formBtn").click(function (e) {
-
+    //confirm that user is happy with their answers
     $.confirm({
       icon: 'fa fa-question',
       theme: 'modern',
@@ -27,6 +28,7 @@ window.onload = (event) => {
         submit: {
           text: 'Submit',
           action: function () {
+            //Submit form to php
             document.getElementById('testForm').submit();
           }
         },
@@ -39,6 +41,8 @@ window.onload = (event) => {
   });
 
 // https://www.w3schools.com/js/js_cookies.asp
+// Used to get team Name from previous page. 
+// Includes special handling
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie); //decode cookie string to handle cookies with special characters.

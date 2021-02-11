@@ -1,3 +1,4 @@
+/* Used for questions.html, deleteTable.php, scoreboard.php, and submitAnswers.php */
 
 /* || Imported Files */
 /*  Google Font - Source Sans Pro */
@@ -10,13 +11,15 @@
     box-sizing: border-box;
 }
 
+/* Formats body in a way to prevent bootstrap from taking over fully */
 .myBody {
-    background-image: url("images/WSPLunchroom.jpg");
+    background-image: url("images/lunchroom.jpg");
     background-repeat: repeat-y;
     background-size: cover;
     background-position: center center;
 }
 
+/* Used to make the whole question array into a flex container */
 .myDiv {
     /* Background image Settings */
     font-family: "Anton", sans-serif; /* desired font + default font*/
@@ -34,18 +37,13 @@
     text-align: center;
 }
 
+/* Ensures images stay within flex container when zoomed in or out */ 
 img {
     object-fit: cover;
-    width: 95%;
-    height: 80%;
+    width: 90%;
+    height: 300px;
+    justify-content: center;
   }
-
-/* Currently only used for form labels */  
-label {  
-    color:black;
-    font-size: 6vh;
-}
-
 
 /* | Table Formatting */
 .myTable{
@@ -86,6 +84,7 @@ tr:nth-child(odd){
     height: 100%;
 }
 
+/* used to contain one question */
 .questionPanel{
     margin: 10px;
     padding: 10px;
@@ -99,12 +98,6 @@ tr:nth-child(odd){
 
 }
 
-.questionImg{
-    justify-content: center;
-    width: 90%;
-    height: 300px;
-    object-fit: center;
-}
 
 .textInput {
     width: 90%;
@@ -125,6 +118,7 @@ tr:nth-child(odd){
     text-align: center;
 }
 
+/* Used on questions.html as the form submit button format*/
 #formBtn{
     margin: 4vh;
     /* Old colour #4370E7 */
@@ -145,6 +139,7 @@ tr:nth-child(odd){
     background-color: #c9382e;
 }
 
+/* Used on scoreboardPage. */
 #startOverBtn{
     margin: 10px;
     background-color: #fc4236;
@@ -162,12 +157,14 @@ tr:nth-child(odd){
     font-size: 1rem;
     padding: 1.1rem; 
     width: 70vw;
+    max-width: 1400px;
 }
 
 #startOverBtn:hover{
     background-color: #c9382e;;
 }
 
+/* Used on submit answers page */
 #checkMarkImg{
     width: 40vw;
     height: 40vh;

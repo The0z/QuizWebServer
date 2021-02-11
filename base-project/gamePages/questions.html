@@ -1,6 +1,5 @@
 <!-- 
     Page that will contain all the Who the heck is that questions
-    Will most likely incorporate a scroll bar
 -->
 
 <!DOCTYPE HTML> 
@@ -31,7 +30,9 @@
     <h2 class='myH2' id='teamName'>Team Name</h2>
     <p id='instructions' class='questionPanel'>Answer all 20 Questions Below!</p>
     <form id='testForm' action="php/submitAnswers.php" method="post">
+    <!-- Flex container to hold all the questions -->
     <div class='flex-container'>
+        <!-- each div with class questionPanel contains one question -->
         <div class='questionPanel'>
             <p>Question 1</p>
             <img src="game_images/Brad-Pitt.jpg" class='questionImg' alt='question 1 person'>
