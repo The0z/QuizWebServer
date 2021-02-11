@@ -23,6 +23,7 @@
 
 </head>
 <body class="myBody">
+    <div class="myDiv">
     <h2> Answers and Guesses </h2>
     <table>
         <!-- tr defines a row of a table, th is header, td is data -->
@@ -98,5 +99,6 @@
 
         ?>
     </table>
+    </div>
 </body>
 </html>
