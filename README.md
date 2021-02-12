@@ -2,7 +2,7 @@
 
 ### A custom website used in a team-building event. Consisted of CSS, HTML, JavaScript, PHP, Ngnix, and MySQL components.
 -	Quiz site in which teams compete and compare answers to see who got the most answers right.
--	Uses CSS and HTML to design 5 unique webpages that all integrated together.
+-	Uses CSS and HTML to design for 5 unique webpages.
 -	Uses PHP to create, manage, and display a MySQL database containing several teams' answers.
 -	Uses jQuery, JQuery-confirm, and Bootstrap.
 - Uses cookies :cookie:
