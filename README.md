@@ -23,8 +23,8 @@ Prevents characters such as <>, (), /, etc -- i.e. the JavaScript Hacking Ones
 ## Too Many Characters Checker
 ![Too Many Characters Checker Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/CharacterLimit.gif "Too Many Character Checker")
 Checks to make sure the Team Name is less than or equal to 50 characters
--Prevents graphical glitches in future pages
--Ensures MySQL can store the entire team name in the database table
+- Prevents graphical glitches in future pages
+- Ensures MySQL can store the entire team name in the database table
 
 ## Question Page
 ![Question Page Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/QuestionPage.gif "Question Page")
