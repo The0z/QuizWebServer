@@ -2,11 +2,11 @@
 
 ### A custom website used in a team-building event. Consisted of CSS, HTML, JavaScript, PHP, Ngnix, and MySQL components.
 -	Quiz site in which teams compete and compare answers to see who got the most answers right.
--	Uses CSS and HTML to design for 5 unique webpages.
+-	Uses CSS and HTML to design 5 unique webpages.
 -	Uses PHP to create, manage, and display a MySQL database containing several teams' answers.
 -	Uses jQuery, JQuery-confirm, and Bootstrap.
-- Uses cookies :cookie:
--	Created a web server with Ngnix that has HTTPS and TLSv1.3 enabled to run the quiz site.
+- Uses Cookies :cookie:
+-	Uses a web server created with Ngnix that has HTTPS and TLSv1.3 enabled to run the site.
 - Webserver is portforwarded and uses a DDNS allowing remote access while using a dynamic IP address.
  
 ## Starting the Game
@@ -20,11 +20,11 @@ Welcome page that is seen when you first enter the website
 Prevents characters such as <>, (), /, etc -- i.e. the JavaScript Hacking Ones
 - JavaScript based - not the strongest but a classic security measure
 
-## Too Many Character Checker
+## Too Many Characters Checker
 ![Too Many Characters Checker Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/CharacterLimit.gif "Too Many Character Checker")
 Checks to make sure the Team Name is less than or equal to 50 characters
 -Prevents graphical glitches in future pages
--Ensures MySQL can store the entire team name in the database
+-Ensures MySQL can store the entire team name in the database table
 
 ## Question Page
 ![Question Page Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/QuestionPage.gif "Question Page")
@@ -35,17 +35,18 @@ Webpage that contains all the questions.
 ## Submitting Questions
 ![Submit Questions Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/SubmitQuestions.gif "Submit Questions")
 Everytime a team hits submit, the data will be sent to a MySQL database using PHP
+- Warns the user on submit that they cannot go back once they hit yes
 
 ## Waiting for Other Teams to Complete
 ![Waiting Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/WaitingForTeamsPage.gif "Waiting for Others")
 
 ## Teams Scoreboard Page
 ![Scoreboard Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/Scoreboard.gif "Scoreboard")
-Every teams answer will be shown allowing teams to compare themselves to each other and to prevent cheating!
+Every teams answers will be shown allowing teams to compare themselves to each other and to prevent cheating!
 - PHP is used to access the mySQL table database that contains all the teams data. 
 - It will then convert the MySQL table into a vertical table (first row is table headers) for easy comparison
 
 ## Ending the Game and Starting Over
 ![Startover Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/ResettingGame.gif "Resetting Game")
-Once the game is over, users can hit the start over button to delete their data
+Once the game is over users can hit the start over button to delete their data
 - This button will also automatically delete the team's data to save space on the MySQL database device
