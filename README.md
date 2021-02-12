@@ -10,4 +10,4 @@
 
 <img src="/QuizWebServer/tree/main/gifs/BeginGame.gif" width="250" height="250" />
 
-![Begin Game Gif](/tree/main/gifs/BeginGame.gif "Begin Game!")
+![Begin Game Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/BeginGame.gif "Begin Game!")
