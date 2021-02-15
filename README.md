@@ -9,7 +9,7 @@
 -	Uses a web server created with Ngnix that has HTTPS and TLSv1.3 enabled to run the site.
 - Webserver is portforwarded and uses a DDNS allowing remote access while using a dynamic IP address.
  
-## Starting the Game
+## Starting the Game { NOTE FTW MEANS FOR THE WIN }
 ![Begin Game Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/BeginGame.gif "Begin Game!")
 Welcome page that is seen when you first enter the website
 - Begin Game Button cannot be pressed until a valid Team Name is entered
