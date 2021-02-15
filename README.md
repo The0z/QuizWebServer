@@ -27,9 +27,9 @@ Checks to make sure the Team Name is less than or equal to 50 characters
 - Ensures MySQL can store the entire team name in the database table
 
 ## Question Page
-![Question Page Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/BeginGame.gif "Question Page Gif")
+![Question Page Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/QuestionPage.gif "Question Page Gif")
 Webpage that contains all the questions.
-- Can use mouse wheel or tab key (seen above) to navigate throughout the questions
+- Can use mouse wheel or tab key to navigate throughout the questions
 - Shows a loading cube if users internet is not fast enough to load the initial image
 
 ## Submitting Answers to Questions
@@ -47,6 +47,6 @@ Every teams answers will be shown allowing teams to compare themselves to each o
 - It will then convert the MySQL table into a vertical table (first row is table headers) for easy comparison
 
 ## Ending the Game and Starting Over
-
+![Start Over Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/ResettingGame.gif "Resetting Game")
 Once the game is over users can hit the start over button to delete their data
 - This button will also automatically delete the team's data to save space on the MySQL database device
