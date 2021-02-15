@@ -9,9 +9,10 @@
 -	Uses a web server created with Ngnix that has HTTPS and TLSv1.3 enabled to run the site.
 - Webserver is portforwarded and uses a DDNS allowing remote access while using a dynamic IP address.
  
-## Starting the Game { NOTE FTW MEANS FOR THE WIN }
+## Starting the Game
 ![Begin Game Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/BeginGame.gif "Begin Game!")
 Welcome page that is seen when you first enter the website
+- UPDATE: Clarification FTW means FOR THE WIN
 - Begin Game Button cannot be pressed until a valid Team Name is entered
 - Stores the Team Name as a cookie so that future pages and PHP can easily access it
 
@@ -40,9 +41,10 @@ Everytime a team hits submit, the data will be sent to a MySQL database using PH
 ## Waiting for Other Teams to Complete
 ![Waiting Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/WaitingForTeamsPage.gif "Waiting for Others")
 
-## Teams Scoreboard Page
+## Teams Scoreboard Page 
 ![Scoreboard Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/Scoreboard.gif "Scoreboard")
 Every teams answers will be shown allowing teams to compare themselves to each other and to prevent cheating!
+- UPDATE: Has been updated with a more opaque background {Not shown}
 - PHP is used to access the mySQL table database that contains all the teams data. 
 - It will then convert the MySQL table into a vertical table (first row is table headers) for easy comparison
 
