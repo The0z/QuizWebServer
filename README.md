@@ -52,5 +52,5 @@ Once the game is over users can hit the start over button to delete their data
 - This button will also automatically delete the team's data to save space on the MySQL database device
 
 ## Security
-![TLS Checker Results](https://github.com/The0z/QuizWebServer/blob/main/gifs/SecurityResults.png "TLS Checker Results")
+![TLS Checker Results](https://github.com/The0z/QuizWebServer/blob/main/gifs/SecurityResults.PNG "TLS Checker Results")
 Results from using TLS Checker (https://www.cdn77.com/tls-test)
