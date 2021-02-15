@@ -33,7 +33,7 @@ Webpage that contains all the questions.
 - Shows a loading cube if users internet is not fast enough to load the initial image
 
 ## Submitting Answers to Questions
-
+![Submit Answers Gif](https://github.com/The0z/QuizWebServer/blob/main/gifs/SubmitQuestions.gif "Submit Answers Gif")
 Everytime a team hits submit, the data will be sent to a MySQL database using PHP
 - Warns the user on submit that they cannot go back once they hit yes
 
