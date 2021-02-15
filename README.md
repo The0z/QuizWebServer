@@ -55,3 +55,4 @@ Once the game is over users can hit the start over button to delete their data
 ![TLS Checker Results](https://github.com/The0z/QuizWebServer/blob/main/gifs/SecurityResults.PNG "TLS Checker Results")
 
 Results from using TLS Checker (https://www.cdn77.com/tls-test)
+- TLS 1.3 encryption protocol enhances the HTTPS performance and security for all users and provides many improvements in comparison with TLS 1.2 and older. The most prominent one is reduced latency by making the TLS handshake shorter and more efficient before any secure session is established.
