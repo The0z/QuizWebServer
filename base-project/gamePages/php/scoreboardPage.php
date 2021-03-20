@@ -27,7 +27,7 @@
     <h2 class='myH2'> Answers and Guesses </h2>
     <table class='myTable'>
         <!-- tr defines a row of a table, th is header, td is data -->
-        <input type='button' id='startOverBtn' value="Play Again?">
+        <input type='button' id='startOverBtn' value="Delete Team Answers and Start Over?">
 
         <!-- PHP to create Table -->
         <?php
