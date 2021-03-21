@@ -32,6 +32,7 @@
     background-color: white;
     margin: 2vh;
     width: 70vw;
+    padding: 10px 50px 10px 50px;
     border-radius: 5px;
     box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
     text-align: center;
@@ -107,16 +108,25 @@ tr:nth-child(odd){
     margin-bottom: 0.25rem;
 }
 
+/* Used to force bold */
+.impBold{
+    font-weight: bold !important;
+}
 
 /* || IDs */
 #instructions{
+    font-family: sans-serif;
     background-color: white;
-    margin: 2vh;
-    height: fit-content;
+    font-size: 0.85rem;
+    font-weight: 300;
+    margin: 1vh;
+    width: fit-content;
     border-radius: 5px;
     box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
     text-align: center;
 }
+
+
 
 /* Used on questions.html as the form submit button format*/
 #formBtn{
