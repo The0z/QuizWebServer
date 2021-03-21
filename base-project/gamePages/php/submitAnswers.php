@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/materia/bootstrap.min.css">
     <link rel="stylesheet" href='../css/questionsStyle.css'>
     
-    <!-- SCRIPTS - set all to defer (load after page is done) -->    
-    <script src="../javascript/alt-alert.js" defer></script>
+    <!-- SCRIPTS - set all to defer (load after page is done) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <script src="../javascript/scoreboardScript.js" defer></script>
 </head>
 <body class='myBody'>
@@ -85,6 +85,33 @@
         exit("The Connection has Failed!: ". $conn->connect_error);
     }
 
+    $teamName = $conn->real_escape_string($teamName);
+    $q1 = $conn->real_escape_string($q1);
+    $q2 = $conn->real_escape_string($q2);
+    $q3 = $conn->real_escape_string($q3);
+    $q4 = $conn->real_escape_string($q4);
+    $q5 = $conn->real_escape_string($q5);
+    $q6 = $conn->real_escape_string($q6);
+    $q7 = $conn->real_escape_string($q7);
+    $q8 = $conn->real_escape_string($q8);
+    $q9 = $conn->real_escape_string($q9);
+    $q10 = $conn->real_escape_string($q10);
+    $q11 = $conn->real_escape_string($q11);
+    $q12 = $conn->real_escape_string($q12);
+    $q13 = $conn->real_escape_string($q13);
+    $q14 = $conn->real_escape_string($q14);
+    $q15 = $conn->real_escape_string($q15);
+    $q16 = $conn->real_escape_string($q16);
+    $q17 = $conn->real_escape_string($q17);
+    $q18 = $conn->real_escape_string($q18);
+    $q19 = $conn->real_escape_string($q19);
+    $q20 = $conn->real_escape_string($q20);
+    $q21 = $conn->real_escape_string($q21);
+    $q22 = $conn->real_escape_string($q22);
+    $q23 = $conn->real_escape_string($q23);
+    $q24 = $conn->real_escape_string($q24);
+
+
     //Creating an SQL query in string form
     $sql = "insert into scorecard(teamName, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23, q24)
         values('$teamName','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13','$q14','$q15',
@@ -96,7 +123,7 @@
         console_log("ADDED: Answers to the Scoreboard");
     } else {
         //prints ERROR: sql connection failed (or something like that)
-        console_log("Error: ".$sql."<br>".$conn->error);
+        console_log("Error: ".$sql." ".$conn->error);
     }
 
     //close the connection to the database
