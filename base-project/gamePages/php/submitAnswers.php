@@ -63,7 +63,10 @@
     $q18 = htmlspecialchars($_POST['q18']);
     $q19 = htmlspecialchars($_POST['q19']);
     $q20 = htmlspecialchars($_POST['q20']);
-
+    $q21 = htmlspecialchars($_POST['q21']);
+    $q22 = htmlspecialchars($_POST['q22']);
+    $q23 = htmlspecialchars($_POST['q23']);
+    $q24 = htmlspecialchars($_POST['q24']);
 
     //This is the mySQL database information
     $servername = "localhost";
@@ -83,9 +86,9 @@
     }
 
     //Creating an SQL query in string form
-    $sql = "insert into scorecard(teamName, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20)
+    $sql = "insert into scorecard(teamName, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23, q24)
         values('$teamName','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13','$q14','$q15',
-        '$q16','$q17','$q18','$q19','$q20')";
+        '$q16','$q17','$q18','$q19','$q20','$q21','$q22','$q23','$q24')";
 
     //if the query result is exactly equivalent to TRUE then do the following
     if ($conn->query($sql) === TRUE){

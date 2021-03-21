@@ -3,26 +3,30 @@ $(document).ready(function(){
   /* Easy way to populate questions without too much automation */
   function populateQuestions(){
     /* Question Text */
-    $("#q1P").html("Question 1: Who the heck is this?");
-    $("#q2P").html("Question 2: Who the heck is this?");
-    $("#q3P").html("Question 3: What is the brand and name of this car?");
-    $("#q4P").html("Question 4: What is the name of this structure?");
-    $("#q5P").html("Question 5: What is this a part of?");
-    $("#q6P").html("Question 6: Which villian is this actor portraying?");
-    $("#q7P").html("Question 7: What is the name of the gardens below the tower?");
-    $("#q8P").html("Question 8: Who is this?");
-    $("#q9P").html("Question 9: What is the brand and name of this sport hatch?");
-    $("#q10P").html("Question 10: Who is the heck is this?");
-    $("#q11P").html("Question 11: What is the waves in the sky called?");
-    $("#q12P").html("Question 12: Where is this?");
-    $("#q13P").html("Question 13: What is this?!?");
-    $("#q14P").html("Question 14: Where is this?");
-    $("#q15P").html("Question 15: Who drives this in this group?");
-    $("#q16P").html("Question 16: What are these super cool awesome definitely not testing formatting animals called?");
-    $("#q17P").html("Question 17: What type of dog is this?");
-    $("#q18P").html("Question 18: Who the heck is this?");
-    $("#q19P").html("Question 19: Who the heck is this?");
-    $("#q20P").html("Question 20: Who the heck is this?");
+    $("#q1P").html("Question 1: Name the movie AND What is Jack Nicholson's character name?");
+    $("#q2P").html("Question 2: My passion is interior design and I went to University in Mexico to learn Spanish. Who am I?");
+    $("#q3P").html("Question 3: Name the band AND their original genre of music.");
+    $("#q4P").html("Question 4: Who is this?");
+    $("#q5P").html("Question 5: Who wrote this quote?");
+    $("#q6P").html("Question 6: I used to be a potato farmer from PEI, which helped me get my first role. Who am I?");
+    $("#q7P").html("Question 7: Who is this AND what is his height as an adult?");
+    $("#q8P").html("Question 8: What is his name AND claim to fame?");
+    $("#q9P").html("Question 9: Who is this band from the British Invasion AND how many children does the lead singer have?");
+    $("#q10P").html("Question 10: What is this duo's famous song AND who did a remake of this song?");
+    $("#q11P").html("Question 11: I met my wife in University, but grew up a couple of blocks from each other as children. Who am I?");
+    $("#q12P").html("Question 12: What was the actress's name in the Wedding Singer?");
+    $("#q13P").html("Question 13: This gentleman has a background in television and acting, and was on The Final Table on Netflix. Who am I?");
+    $("#q14P").html("Question 14: Who is the band? BONUS for their names.");
+    $("#q15P").html("Question 15: Who is this dashing fellow? Who is his famous neighbor AND what street did they live on?");
+    $("#q16P").html("Question 16: Who is this famous Duo?  What have they accomplished?");
+    $("#q17P").html("Question 17: What movie is this scene from?");
+    $("#q18P").html("Question 18: What is this child's name?  Can you name his first movie or TV Series?");
+    $("#q19P").html("Question 19: You may not recognize me from the accent, but I was born in Zambia and immigrated to Canada?");
+    $("#q20P").html("Question 20: Who is this adorable creature?");
+    $("#q21P").html("Question 21: Who is her best friend?");
+    $("#q22P").html("Question 22: Who is this Duo AND How did the man die?");
+    $("#q23P").html("Question 23: What movie is this?");
+    $("#q24P").html("Question 24: I drive this car. Name the Car AND who am I?");
 
     /* Question Image */
     $("#q1Img").attr("src","game_images/q1.jpg");
@@ -45,6 +49,10 @@ $(document).ready(function(){
     $("#q18Img").attr("src","game_images/q18.jpg");
     $("#q19Img").attr("src","game_images/q19.jpg");
     $("#q20Img").attr("src","game_images/q20.jpg");
+    $("#q21Img").attr("src","game_images/q21.jpg");
+    $("#q22Img").attr("src","game_images/q22.jpg");
+    $("#q23Img").attr("src","game_images/q23.jpg");
+    $("#q24Img").attr("src","game_images/q24.jpg");
   }
 
 
